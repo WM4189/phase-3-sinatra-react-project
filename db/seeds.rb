@@ -26,7 +26,6 @@ Question.create(prompt: 'What is the correct JavaScript syntax for opening a new
 # Question.create()
 # Question.create
 # Question.create
-
 # HTML
 
 Question.create(prompt: "What does HTML stand for?", answer1: "Hyperlinks and Text Markup Language" , answer2: "Home Tool Markup Language", answer3: "Hyper Text Markup Language", answer4: "None of the answers are correct", correct_answer: "Hyper Text Markup Language", subject_id: html.id)
@@ -34,7 +33,7 @@ Question.create(prompt: "Who is making the Web standards?", answer1: "Mozilla" ,
 Question.create(prompt: "Choose the correct HTML element for the largest heading:", answer1: "<h1>" , answer2: "<heading>", answer3: "<h6>", answer4: "<head>", correct_answer: "<h1>", subject_id: html.id)
 Question.create(prompt: "What is the correct HTML element for inserting a line break?", answer1: "<lb>" , answer2: "<br>", answer3: "<break>", answer4: "None of the answers are correct", correct_answer: "<br>", subject_id: html.id)
 Question.create(prompt: "Choose the correct HTML element to define important text", answer1: "<i>" , answer2: "<b>", answer3: "<important>", answer4: "<strong>", correct_answer: "<strong>", subject_id: html.id)
-Question.create(prompt: "How can you open a link in a new tab/browser window?", answer1: '<a href="url" target="_blank">', answer2:'<a href="url" new>', answer3: '<a href="url" target="new">', answer4: '<a href="/" target="new">', correct_answer: '<a href="url" target="_blank">' subject_id: html.id)
+Question.create(prompt: "How can you open a link in a new tab/browser window?", answer1: '<a href="url" target="_blank">', answer2:'<a href="url" new>', answer3: '<a href="url" target="new">', answer4: '<a href="/" target="new">', correct_answer: '<a href="url" target="_blank">' , subject_id: html.id)
 Question.create(prompt: '<a href="url" target="_blank">', answer1: '<table><tr><tt>', answer2: '<table><head><tfoot>', answer3: '<table><tr><td>', answer4: '<thead><body><tr>', correct_answer: '<table><tr><td>', subject_id: html.id)
 Question.create(prompt: 'How can you make a numbered list?', answer1: "<list>", answer2: "<ul>", answer3: "<dl>", answer4: "<ol>", correct_answer: "<ol>", subject_id: html.id)
 Question.create(prompt: "How can you make a bulleted list?", answer1: "<ul>", answer2: "<dl>", answer3: "<list>", answer4: "<ol>", correct_answer: "<ul>", subject_id: html.id)
@@ -44,7 +43,7 @@ Question.create(prompt: "What does CSS stand for?", answer1: "Cascading Style Sh
 Question.create(prompt: "Which is the correct CSS syntax?", answer1: "{body:color=black;}", answer2: "body:color=black;", answer3: "body {color: black;", answer4: "{body;color:black;}", correct_answer: "body{color:black;}", subject_id: css.id)
 Question.create(prompt: "How do you insert a comment in a CSS file?", answer1: "//this is a comment", answer2: "/* this is a comment */", answer3: "// this is a comment//", answer4: "'this is a comment", correct_answer: "/* this is a comment */", subject_id: css.id)
 Question.create(prompt: "What is the correct CSS syntax for making all the <p> elements bold?", answer1: "<p style='font-size:bold;'>", answer2: "p{text-size:bold;}", answer3: "<p style='text-size:bold;'>", answer4: "p{font-weight:bold;}", correct_answer: "p{font-weight:bold;}", subject_id: css.id)
-Question.create(prompt: "Which snippet of CSS is commonly used to center a website horizontally?" answer1: "site-align: center;", answer2:"margin:center;", answer3: "margin: auto 0;", answer4: "margin: 0 auto;", correct_answer: "margin: 0 auto;", subject_id: css.id)
+Question.create(prompt: "Which snippet of CSS is commonly used to center a website horizontally?", answer1: "site-align: center;", answer2:"margin:center;", answer3: "margin: auto 0;", answer4: "margin: 0 auto;", correct_answer: "margin: 0 auto;", subject_id: css.id)
 Question.create(prompt: "How do you make a list not display bullet points?", answer1: "list-style-type: no-bullet", answer2: "list: none", answer3: "bulletpoints:none", answer4: "list-style-type: none", correct_answer: "list-style-type: none", subject_id: css.id)
 Question.create(prompt: "What is the correct Syntax for importing a stylesheet in CSS?", answer1: "@import url(css/example.css);", answer2: "@import-stylesheet url(css/example.css);", answer3: "import-css url(css/example.css);", answer4: "@import-style url(css/example.css)", correct_answer: "@import url(css/example.css)", subject_id: css.id)
 Question.create(prompt: "How do you make each word in a text start with a capital letter?", answer1: "text-transform: capitalize", answer2: "text-transform: uppercase", answer3: "Cannot be done with CSS", answer4: "text: capitalize", correct_answer: "text-transform: capitalize", subject_id: css.id)
@@ -95,4 +94,18 @@ Question.create(prompt: "How do you insert COMMENTS in C++ code?", answer1: "#Th
 Question.create(prompt: "Which data type is used to create a variable that should store text?", answer1: "String", answer2: "myString", answer3: "string", answer4: "Txt", correct_answer: "string", subject_id: c.id)
 Question.create(prompt: "Which header file lets us work with input and output objects?", answer1: "#include <iostream>", answer2: "#include <inputstr>", answer3: "#include <stream>", answer4: "#include <iosstring>", correct_answer: "#include <iostream>", subject_id: c.id)
 
+
+# Question.create(prompt:, correct_answer, incorrect_answers, subject_id)
+
+# questions.length > 0 ? {list of questions} : <h1>hey bro we're learning</h1> 
+# dangerouslySetInnerHTML={{__html: questions[0].question}}
+
+#<Button onClick={()=> handleAnswer(true)}/>
+#<Button onClick={()=> handleAnswer(false)}/>
+# const shuffledAnswer = [correct_answer, ...incorrect_answers].sort(() => Math.random() - 0.5)
+
+#so when he sends down the answers to the buttons, he sets the className for the answers there to determine what color they get 
+
+# 3 states so far, [questions, setQuestions], [currentIndex, setCurrentIndex], [score, setScore]
+#upon submission, RETURN You score was {score}
 puts "✅ Done seeding!"
