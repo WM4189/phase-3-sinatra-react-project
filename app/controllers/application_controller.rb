@@ -7,6 +7,28 @@ class ApplicationController < Sinatra::Base
   #   { message: "Good luck with your project!" }.to_json
   # end
 
+  get "/questions" do
+    questions = Question.all
+    questions.to_json
+  end
+
+  
+  get "/question/:id" do
+    question = Question.find(params[:id])
+    question.to_json
+  end
+
+  patch "/question/:id" do
+    question = Question.find(params[:id])
+    question.update(
+      correct_answer: params[:correct_answer]
+    )
+    question.to_json
+  end
+
+  ######################
+
+
   get "/subjects" do
     subjects = Subject.all
     subjects.to_json
@@ -26,14 +48,6 @@ class ApplicationController < Sinatra::Base
       answer4: params[:answer4],
       correct_answer: params[:correct_answer],
       subject_id: params[:subject_id]
-    )
-    question.to_json
-  end
-
-  patch "/question/:id" do
-    question = Question.find(params[:id])
-    question.update(
-      correct_answer: params[:correct_answer]
     )
     question.to_json
   end
