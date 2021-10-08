@@ -82,7 +82,7 @@ Question.create(prompt: "Which keyword is used to create a class in Java?", answ
 Question.create(prompt: "Which statement is used to stop a loop?", answer1: "stop", answer2: "exit", answer3: "return", answer4: "break", correct_answer: "break", subject_id: java.id)
 Question.create(prompt: "Which method can be used to find the highest value of x and y?", answer1: "Math.max(x,y)", answer2: "Math.largest(x,y)", answer3: "Math.sum(x,y)", answer4: "Math.maximum(x,y)", correct_answer: "Math.max(x,y)", subject_id: java.id)
 Question.create(prompt: "Which keyword is used to return a value inside a method?", answer1: "print", answer2: "return", answer3: "puts", answer4: "break", correct_answer: "return", subject_id: java.id)
-Question.create(prompt: "How do you insert COMMENTS in Java code?", answer1: "#This is a comment", answer2: "/* This is a comment", answer3: "//This is a comment", answer4: "{* This is a comment *}", correct_answer: "//This is a comment", subject_id: java.id)
+Question.create(prompt: "How do you insert COMMENTS in Java code?", answer1: "#This is a comment", answer2: "/* This is a comment", answer3: "// This is a comment", answer4: "{* This is a comment *}", correct_answer: "// This is a comment", subject_id: java.id)
 Question.create(prompt: "How do you create a variable with the numeric value 5?", answer1: "x=5", answer2: "num x=5", answer3: "float x=5", answer4: "int x=5", correct_answer: "int x=5", subject_id: java.id)
 Question.create(prompt: "Which method can be used to return a string in upper case letters?", answer1: "toUpperCase()", answer2: "upperCase()", answer3:"toCapitalize()", answer4: "capitalize()", correct_answer: "toUpperCase()", subject_id: java.id)
 
